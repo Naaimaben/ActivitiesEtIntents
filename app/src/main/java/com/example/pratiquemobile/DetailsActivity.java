@@ -18,7 +18,7 @@ public class DetailsActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String myName = intent.getStringExtra("Name");
         Integer myHidden = intent.getIntExtra("hiddencopy", -1);
-        TextView nameTV =(TextView) findViewById(R.id.ask_for_name);
+        TextView nameTV =(TextView) findViewById(R.id.output);
         nameTV.setText(myName);
 
         Button btn1 = (Button) findViewById(R.id.ok);

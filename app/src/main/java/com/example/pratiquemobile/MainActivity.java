@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
             toast.setMargin(70, 50);
             toast.show();
         } else if (requestCode == APPEL_ACTIV2) {
-            TextView nameTV = (TextView) findViewById(R.id.output);
+            TextView nameTV = (TextView) findViewById(R.id.ask_for_name);
             nameTV.setText("LE NOM A ETE ENREGISTRE AVEC SUCCES!");
         } else {
             Toast toast = Toast.makeText(getApplicationContext(), "ERROR ERROR !", Toast.LENGTH_SHORT);
