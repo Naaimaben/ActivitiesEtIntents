@@ -18,10 +18,10 @@ public class DetailsActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String myName = intent.getStringExtra("Name");
         Integer myHidden = intent.getIntExtra("hiddencopy", -1);
-        TextView nameTV =(TextView) findViewById(R.id.textView3);
+        TextView nameTV =(TextView) findViewById(R.id.ask_for_name);
         nameTV.setText(myName);
 
-        Button btn1 = (Button) findViewById(R.id.button2);
+        Button btn1 = (Button) findViewById(R.id.ok);
         btn1.setOnClickListener(new View.OnClickListener(){
 
             @Override

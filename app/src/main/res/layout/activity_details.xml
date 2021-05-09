@@ -25,11 +25,11 @@
             tools:layout_editor_absoluteY="93dp" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/ok"
             android:layout_width="252dp"
             android:layout_height="58dp"
             android:layout_margin="15dp"
-            android:text="Button"
+            android:text="OK"
             tools:layout_editor_absoluteX="277dp"
             tools:layout_editor_absoluteY="93dp" />
     </LinearLayout>

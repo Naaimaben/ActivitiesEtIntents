@@ -22,12 +22,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btn1 = (Button) findViewById(R.id.button);
+        Button btn1 = (Button) findViewById(R.id.validate);
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                EditText myEditText = (EditText) findViewById(R.id.editText);
+                EditText myEditText = (EditText) findViewById(R.id.input);
                 String text = myEditText.getText().toString();
                 Intent i = new Intent(view.getContext(), DetailsActivity.class);
                 i.putExtra("Name", text);
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
             toast.setMargin(70, 50);
             toast.show();
         } else if (requestCode == APPEL_ACTIV2) {
-            TextView nameTV = (TextView) findViewById(R.id.textView);
+            TextView nameTV = (TextView) findViewById(R.id.output);
             nameTV.setText("LE NOM A ETE ENREGISTRE AVEC SUCCES!");
         } else {
             Toast toast = Toast.makeText(getApplicationContext(), "ERROR ERROR !", Toast.LENGTH_SHORT);
